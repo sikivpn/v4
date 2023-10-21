@@ -14,7 +14,7 @@
  clear
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/SETANTAZVPN/permission/main/ipmini > /root/tmp
+    curl -sS https://raw.githubusercontent.com/sikivpn/permission/main/ipmini > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
