@@ -187,9 +187,9 @@ echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 1
 clear
-wget https://raw.githubusercontent.com/sikivpn/multi-ws/ipuk/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/sikivpn/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 #wget https://raw.githubusercontent.com/sikivpn/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/sikivpn/multi-ws/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/sikivpn/v4/main/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 #wget https://raw.githubusercontent.com/sikivpn/v4/main/Sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 #pasang rc clone ssh ovpn 
