@@ -143,7 +143,7 @@ echo -e "                          ⇱ INSTALL DOMAIN ⇲            "
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 echo "1. Use Domain Script 01"
 echo "2. Use Domain Script 02"
-echo "3. Use Private Domain 03 "
+echo "2. Use Private Domain "
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 echo -e""
 read -rp "Choose Your Domain Installation : " dom 
