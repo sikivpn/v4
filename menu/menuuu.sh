@@ -1,6 +1,6 @@
 #!/bin/bash
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/huutvpn/permission/main/ipmini > /root/tmp
+    curl -sS https://raw.githubusercontent.com/sikivpn/permission/main/ipmini > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -18,7 +18,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/huutvpn/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/sikivpn/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -35,7 +35,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/huutvpn/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/sikivpn/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -53,7 +53,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/huutvpn/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/sikivpn/permission/main/ipmini | grep $MYIP | awk '{print $3}')
 fi
 
 # =========================================
@@ -264,7 +264,7 @@ echo -e "${BIYellow}□ Clients Name        = ${GREEN}$Name ${NC}"
 echo -e "${BIYellow}□ Expred Script       = ${GREEN}$Exp  ${NC}"
 echo -e "${BIYellow}□ AutoScript By Dev   = ${GREEN}SETAN-VPN${NC}"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "${BGBLUE}              [ PREMIUM SCRIPT BY HUUTVPN ]                     ${NC}"
+echo -e "${BGBLUE}              [ PREMIUM SCRIPT BY sikivpn ]                     ${NC}"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${GREEN} \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
 echo -e "${GREEN} \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
@@ -276,7 +276,7 @@ echo -e "$PURPLE (•2) $NC PANEL VMESS         $PURPLE (•6) $NC RESTR SERVICE
 echo -e "$PURPLE (•3) $NC PANEL VLESS         $PURPLE (•7) $NC BACKUP MENU   "
 echo -e "$PURPLE (•4) $NC PANEL TROJAN        $PURPLE (•8) $NC OTHER SETTING "
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "$Lyellow               Join MyGrup http://t.me/huutvpn              "$NC
+echo -e "$Lyellow               Join MyGrup http://t.me/sikivpn              "$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo
 read -p " Select menu [1-8] : " opt
