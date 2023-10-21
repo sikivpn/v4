@@ -252,7 +252,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ HUUT-VPN GROUP ]-===================="
+echo "=====================-[ sikivpn GROUP ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -293,7 +293,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script By HUUT-VPN ]-==============="
+echo "===============-[ Script By sikivpn ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
